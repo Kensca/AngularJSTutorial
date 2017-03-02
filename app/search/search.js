@@ -51,7 +51,7 @@ angular.module('myApp.search', ['ngRoute'])
     	var service = {
         query: function (term) {
             return $http.get('/search/' + term);
-        }
+        },
     	fetch: function (id) {
             return $http.get('/edit/' + id);
         },
