@@ -19,6 +19,13 @@
             {{person.address.city}}, {{person.address.state}} {{person.address.zip}}
         </td>
     </tr>
-    </tbody>
+    </tbody>  
+	</table>
+	<table ng-show="searchResults.length" style="width: 100%">
+    ...
+    <tr ng-repeat="person in searchResults">
+        <td><a href="" ng-click="edit(person)">{{person.name}}</a></td>
+        ...
+    </tr>
 </table>
 </div>
