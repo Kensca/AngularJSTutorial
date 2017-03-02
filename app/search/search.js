@@ -9,7 +9,7 @@ angular.module('myApp.search', ['ngRoute'])
     }])
  
     .controller('SearchController', function ($scope, SearchService) {
-        console.log("In Search Controller...");
+        //console.log("In Search Controller...");
         $scope.search = function () {
             console.log("Search term is: " + $scope.term);
             SearchService.query($scope.term).then(function (response) {
